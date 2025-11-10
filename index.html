@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <!-- Container que vai conter o formulário -->
     <main class="container">
         <h1>Busca CEP</h1>
+
+        <!-- Formulário para buscar um CEP -->
         <form action="" id="form-cep">
+            <!-- input do CEP -->
             <input type="text" id="input-cep" placeholder="Digite o CEP (somente números)" required maxlength="8" pattern="\d{8}">
-            <button type="submit">Buscar</button>
+
+            <!-- Botão de busca do CEP -->
+            <button onclick="buscarCep(event)" type="submit">Buscar</button>
         </form>
-        <div id="resultado" class="resultado">
-            
-        </div>
+
+        <!-- Div que exibirá os resultados da pesquisa -->
+        <div id="resultado" class="resultado"></div>
     </main>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
